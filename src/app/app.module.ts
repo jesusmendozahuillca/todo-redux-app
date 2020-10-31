@@ -9,7 +9,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {TodoModule} from "./todos/todo.module";
-import {APP_BASE_HREF} from '@angular/common';
+
 import { FooterComponent } from './footer/footer.component';
 
 import {environment} from "../environments/environment";
@@ -41,7 +41,7 @@ import {appReducers} from "./app.reducer";
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/todo-redux-app/'}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
