@@ -41,7 +41,7 @@ import {appReducers} from "./app.reducer";
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/todo-redux-app'}],
+  providers: [{provide: APP_BASE_HREF, useValue: '/todo-redux-app/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
